@@ -7,18 +7,15 @@ var highScore = 0;
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   if (hasWon) {
-  } 
-  else if (score == 1) {
+  } else if (score == 1) {
     score--;
     hasWon = true; //using haswon here so that all the if statements wont be triggered again(as score is already 0)
     document.querySelector('.message').textContent = '💥 you lost the game';
     document.querySelector('body').style.backgroundColor = '#f70d1a';
     document.querySelector('.score').textContent = score;
-  } 
-  else if (!guess) {
+  } else if (!guess) {
     document.querySelector('.message').textContent = '🚫 No Number!';
-  } 
-  else if (guess === secretNumber) {
+  } else if (guess === secretNumber) {
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('.message').textContent = '🎉 Correct Number';
     document.querySelector('body').style.backgroundColor = '#60b347';
@@ -28,6 +25,12 @@ document.querySelector('.check').addEventListener('click', function () {
       highScore = score;
       document.querySelector('.highscore').textContent = highScore;
     }
+  } else if (guess <= secretNumber - 1 && guess >= secretNumber - 3) {
+    changeText('.message', '📉 Low!');
+    score--;
+  } else if (guess >= secretNumber + 1 && guess <= secretNumber + 3) {
+    changeText('.message', '📈 High!');
+    score--;
   } else if (guess > secretNumber) {
     changeText('.message', ' 📈 Too High!');
     score--;
