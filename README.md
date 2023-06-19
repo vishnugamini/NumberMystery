@@ -1,6 +1,6 @@
-# Guess the Number
+# NumberMystery
 
-Guess the Number is a simple game where the player tries to guess a randomly generated number within a specified range. The game provides feedback to help the player make educated guesses and encourages them to find the correct number with the fewest attempts.
+NumberMystery is a simple game where the player tries to guess a randomly generated number within a specified range. The game provides feedback to help the player make educated guesses and encourages them to find the correct number with the fewest attempts.
 
 ## Features
 
@@ -11,7 +11,7 @@ Guess the Number is a simple game where the player tries to guess a randomly gen
 
 ## Installation
 
-To play Guess the Number on your local machine, follow these steps:
+To play NumberMystery on your local machine, follow these steps:
 
 1. Clone the repository
 
