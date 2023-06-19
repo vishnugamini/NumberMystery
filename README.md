@@ -1,6 +1,6 @@
-# NumberMystery
+# NumberQuest
 
-NumberMystery is a simple game where the player tries to guess a randomly generated number within a specified range. The game provides feedback to help the player make educated guesses and encourages them to find the correct number with the fewest attempts.
+NumberQuest is a simple game where the player tries to guess a randomly generated number within a specified range. The game provides feedback to help the player make educated guesses and encourages them to find the correct number with the fewest attempts.
 
 ## Features
 
@@ -11,7 +11,7 @@ NumberMystery is a simple game where the player tries to guess a randomly genera
 
 ## Installation
 
-To play NumberMystery on your local machine, follow these steps:
+To play NumberQuest on your local machine, follow these steps:
 
 1. Clone the repository
 
